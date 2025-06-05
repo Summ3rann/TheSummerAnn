@@ -45,10 +45,29 @@ li {
 }
 
 .row {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 16px;
 }
+
+.container {
+    padding: 50px 0;
+    width: 100%;
+ 
+}
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.section__title {
+    margin-bottom: 20px;
+}
+
+
 
 /* NAVIGATION BAR */
 
@@ -60,6 +79,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12px;
 }
 
 .nav__link--list{
@@ -87,6 +107,95 @@ nav {
     font-weight: 700;
 }
 
-.about-me__info--para {
-   text-align: center;
+
+/*ABOUT ME */
+
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+}
+
+.about-me__picture {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0, .16);
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 14px;
+}
+
+.about-me__info--title {
+    margin-bottom: 18px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+}   
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
+}
+
+/* LANGUAGES */
+
+.language__img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.language {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+} 
+
+.language__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.language__name {
+    position: absolute;
+    bottom: 0;
+}
+
